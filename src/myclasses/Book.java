@@ -27,7 +27,7 @@ public class Book {
         this.authors = authors;
     }
     public void addAuthor(Author author){
-        //sozdat kopiju authors s dopolnitelnoi jachekoi
+        //sozdat kopiju authors s dopolnitelnoi jacheikoi
         //v dop. jacheiky pomeshchaem author
         //v authors kladjem ssilku na novqi massiv
         Author[] newAuthors = Arrays.copyOf(authors, authors.length +1);
