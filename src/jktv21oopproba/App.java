@@ -5,6 +5,8 @@
  */
 package jktv21oopproba;
 
+import java.util.Arrays;
+import java.util.Scanner;
 import myclasses.Author;
 import myclasses.Book;
 import tools.Tools;
@@ -16,12 +18,35 @@ import tools.Tools;
 public class App {
     // 6 variant
      public void run(){
+        Scanner scanner = new Scanner(System.in);
         Tools tools = new Tools();
         Book book = tools.createBook("2222212 stulyev");
         book.addAuthor(tools.createAuthor("Ivan","Ivanov"));
         System.out.println("************************");
         System.out.println(book.toString());
         System.out.println("");
+        Book[] books = new Book[5];
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Nazvanie knigi: ");
+            String title = scanner.nextLine();
+            book = new Book();
+            book.setTitle(title);
+            System.out.println("Skolko avtorov v etoi knige: ");
+            int countAuthorsInBook = scanner.nextInt();
+            scanner.nextLine();
+            String firstname = "";
+            String lastname = "";
+            for (int j = 0; j < countAuthorsInBook; j++) {
+                System.out.println("Imja avtora "+(j+1)+": ");
+                firstname = scanner.nextLine();
+                System.out.println("Familija avtora "+(j+1)+": ");
+                lastname = scanner.nextLine();
+                book.addAuthor(tools.createAuthor(firstname, lastname));
+            }
+            
+            books[i] = book;
+        }
+         System.out.println(Arrays.toString(books));
     }
     /*
     //k 4 variantu
