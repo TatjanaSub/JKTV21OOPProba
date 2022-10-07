@@ -71,7 +71,7 @@ public class JKTV21OOPProba {
         book1.setTitle("Dvenadtsat stulyev");
         book1.setAuthors(authors2);
         
-        System.out.println(book1.toString());
+//        System.out.println(book1.toString());
         System.out.printf("Book{authors = %s, title =%s}",Arrays.toString(book1.getAuthors()),book1.getTitle());
         System.out.println("");
         System.out.println("");
@@ -91,6 +91,39 @@ public class JKTV21OOPProba {
         book3.addAuthor(author30);
         
         System.out.println(book3.toString());
+        
+        //3 variant
+        //sozdali createAuthorold 
+        Book book4 = new Book();
+        book4.setTitle("12 stulyev");
+        
+        book4.addAuthor(createAuthorold("Antonio","Gonsales"));
+        
+        book4.addAuthor(author1);
+        book4.addAuthor(author2);
+        book4.addAuthor(author3);
+        System.out.println("************************");
+        System.out.println(book4.toString());
+        System.out.println("");
+        
+        //4 variant
+        // cherez app
+        
+        App app = new App();
+        app.run();
+        
+        //5 variant
+        // cherez app
+        App app1 = new App();
+        app1.runNew();
+    }
+    
+    
+    public static Author createAuthorold(String firstname, String lastname){
+        Author author = new Author();
+        author.setFirstname(firstname);
+        author.setLastname(lastname);
+        return author;
     }
     
 }
