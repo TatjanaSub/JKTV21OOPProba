@@ -7,12 +7,23 @@ package jktv21oopproba;
 
 import myclasses.Author;
 import myclasses.Book;
+import tools.Tools;
 
 /**
  *
  * @author pupil
  */
 public class App {
+    // 6 variant
+     public void run(){
+        Tools tools = new Tools();
+        Book book = tools.createBook("2222212 stulyev");
+        book.addAuthor(tools.createAuthor("Ivan","Ivanov"));
+        System.out.println("************************");
+        System.out.println(book.toString());
+        System.out.println("");
+    }
+    /*
     //k 4 variantu
     public void run(){
         Book book5 = new Book();
@@ -30,6 +41,8 @@ public class App {
         System.out.println(book5.toString());
         System.out.println("");
     }
+    */
+    /*
     //dlja 4 i 5 variantam
     public Author createAuthor(String firstname, String lastname){
         Author author = new Author();
@@ -43,4 +56,5 @@ public class App {
         book.setTitle(title);
         return book;
     }
+    */
 }

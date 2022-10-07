@@ -106,16 +106,17 @@ public class JKTV21OOPProba {
         System.out.println(book4.toString());
         System.out.println("");
         
-        //4 variant
+        //4 i 6 variant
         // cherez app
         
         App app = new App();
         app.run();
-        
+ /*       
         //5 variant
         // cherez app
         App app1 = new App();
         app1.runNew();
+*/
     }
     
     
