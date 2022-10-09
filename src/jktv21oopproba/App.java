@@ -20,11 +20,12 @@ public class App {
      public void run(){
         Scanner scanner = new Scanner(System.in);
         Tools tools = new Tools();
-        Book book = tools.createBook("2222212 stulyev");
-        book.addAuthor(tools.createAuthor("Ivan","Ivanov"));
-        System.out.println("************************");
-        System.out.println(book.toString());
-        System.out.println("");
+//        Book book = tools.createBook("2222212 stulyev");
+//       book.addAuthor(tools.createAuthor("Ivan","Ivanov"));
+//       System.out.println("************************");
+//        System.out.println(book.toString());
+//        System.out.println("");
+        Book book;
         Book[] books = new Book[5];
         for (int i = 0; i < 5; i++) {
             System.out.println("Nazvanie knigi: ");

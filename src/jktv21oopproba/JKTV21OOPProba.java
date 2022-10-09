@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Задание
+- Создайте класс Book и Author
+- Книгу могут написать много авторов (в классе Book есть поле Author[] authors)
+- Создайте конструкторы, get/set (где необходимо сделайте проверку), также метод toString()
+- Создайте массив из 5 книг
  */
 package jktv21oopproba;
 
@@ -9,17 +11,10 @@ import java.util.Arrays;
 import myclasses.Author;
 import myclasses.Book;
 
-/**
- *
- * @author pupil
- */
 public class JKTV21OOPProba {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        
+ /*       
     // 1 variant: kniga s odnim avtorom
     // cherez massiv Author[]  и setAuthors
         Author author1 = new Author();
@@ -33,7 +28,8 @@ public class JKTV21OOPProba {
         book.setAuthors(authors1);
         System.out.println(book.toString());
         System.out.println("");
-        
+ */ 
+ /*
      // 2 variant kniga s odnim avtorom
      // через get  печать
      // через addAuthor
@@ -53,7 +49,8 @@ public class JKTV21OOPProba {
         
         System.out.println("");
         System.out.println("********************************");
-        
+ */
+ /*
     //*****************************************************    
        // kniga s 2 avtorami
        
@@ -91,7 +88,8 @@ public class JKTV21OOPProba {
         book3.addAuthor(author30);
         
         System.out.println(book3.toString());
-        
+ */
+ /*
         //3 variant
         //sozdali createAuthorold 
         Book book4 = new Book();
@@ -105,12 +103,14 @@ public class JKTV21OOPProba {
         System.out.println("************************");
         System.out.println(book4.toString());
         System.out.println("");
-        
+ */
+ 
         //4 i 6 variant
         // cherez app
         
         App app = new App();
         app.run();
+        
  /*       
         //5 variant
         // cherez app
